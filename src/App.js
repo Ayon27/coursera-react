@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
+import Greet from './Components/Greet'
 
 function App() {
   return (
     <div className="App">
+      {/*}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1 class="App-title">React</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,6 +23,12 @@ function App() {
           Learn React
         </a>
       </header>
+  {*/}
+      <Navbar dark color='primary'>
+        <div className='container'>
+          <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+        </div>
+      </Navbar>
     </div>
   );
 }
